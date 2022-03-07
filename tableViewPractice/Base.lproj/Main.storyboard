@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="agL-Av-QtN">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -16,34 +17,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZX6-U3-8cp" userLabel="cancelButtton">
-                                <rect key="frame" x="16" y="44" width="20" height="20"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="n15-zf-cQw"/>
-                                    <constraint firstAttribute="height" constant="20" id="qoa-cJ-t5a"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="cancel"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zk-7w-n39" userLabel="doneButton">
-                                <rect key="frame" x="378" y="44" width="20" height="20"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="315-V9-uYh"/>
-                                    <constraint firstAttribute="width" constant="20" id="TnR-Y5-chj"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="done"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CPc-Zf-6da" userLabel="newAlbumButton">
-                                <rect key="frame" x="16" y="87" width="382" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CPc-Zf-6da" userLabel="newAlbumButton">
+                                <rect key="frame" x="16" y="111" width="382" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="qYL-RD-YWd"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="cretate_new_album"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="cretate_new_album"/>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ds0-EL-aK1">
-                                <rect key="frame" x="16" y="126" width="382" height="736"/>
+                                <rect key="frame" x="16" y="150" width="382" height="663"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="bUq-iA-vLB">
@@ -60,26 +43,48 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="1zk-7w-n39" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2fh-X8-0oI"/>
-                            <constraint firstItem="ZX6-U3-8cp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="F6m-wz-Rky"/>
                             <constraint firstItem="CPc-Zf-6da" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Gif-jf-ulH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ds0-EL-aK1" secondAttribute="trailing" constant="16" id="Iy6-07-eCX"/>
                             <constraint firstItem="ds0-EL-aK1" firstAttribute="top" secondItem="CPc-Zf-6da" secondAttribute="bottom" constant="5" id="Neg-IZ-Gcr"/>
                             <constraint firstItem="ds0-EL-aK1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="SFo-ff-x1X"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CPc-Zf-6da" secondAttribute="trailing" constant="16" id="VrH-UT-qG0"/>
-                            <constraint firstItem="ZX6-U3-8cp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="a7O-2a-QVc"/>
-                            <constraint firstItem="CPc-Zf-6da" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="42.899999999999999" id="tL1-Wj-8VQ"/>
+                            <constraint firstItem="CPc-Zf-6da" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22.899999999999999" id="tL1-Wj-8VQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ds0-EL-aK1" secondAttribute="bottom" id="ydh-co-oVa"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1zk-7w-n39" secondAttribute="trailing" constant="16" id="zRn-b5-ZCA"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="MyV-AK-1bR">
+                        <barButtonItem key="leftBarButtonItem" title="cancelButton" image="cancel" landscapeImage="cancel" id="qu5-l1-IBz"/>
+                        <barButtonItem key="rightBarButtonItem" title="doneButton" image="done" id="MW5-dR-qZx"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="cancelButton" destination="qu5-l1-IBz" id="lmt-9k-jBR"/>
+                        <outlet property="doneButton" destination="MW5-dR-qZx" id="7Y5-Ez-3YL"/>
                         <outlet property="tableView" destination="ds0-EL-aK1" id="pNh-hS-3sR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="30" y="84"/>
+            <point key="canvasLocation" x="454" y="76"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="755-hp-9q3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="agL-Av-QtN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fO7-Ch-eGx">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="8SM-o6-gZm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hYy-3Z-7Bw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-335" y="76"/>
         </scene>
     </scenes>
     <resources>
